@@ -1,0 +1,13 @@
+.product {
+    position: absolute;
+    top: 0;
+}
+
+.deal {
+    position: relative;
+    top: -845px;
+    left: 400px;
+
+}
+
+/* notes: z-index= [value] to layer items */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* eld */
+        .static {
+            position: static;
+        }
+        /* this means that it is static or in place according to it's origin point */
+        .relative {
+            position: relative;
+            left: 42px;
+            width: 400px;
+        }
+        /* this position is in relation to the left hand axis */
+        .fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            /* this above will make the div start from the right instead of the left */
+            width: 250px;
+            background-color: aqua;
+            /* this is relative position to the div it is nested within, the 42px is related to the */
+        }
+        .absolute {
+            /* totally and entirely will give you absolutely that you give it here-- most times is is in reference to it't nearest relative */
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width: 200px;
+        }
+        .sticky {
+            position: sticky;
+            /* this will stick to the position of another  */
+            position: -webkit-sticky;
+            /* this above works in safari browsers */
+            top: 0;
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS102</h1>
+    <div class="static">
+        <p>this is static position</p>
+        <div class="relative">
+            <p>this is relative position</p>
+           
+        </div>
+        <div class="absolute">
+            <p>this is absolute position</p>
+        </div>
+    </div>
+
+    <div class="fixed">
+        <p>this is a fixed div</p>
+    </div>
+
+    <div class="sticky">
+        <p>this is a sticky</p>
+    </div>
+    
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aut, quae tempore, consequatur vel quia dignissimos est dolores, nisi sint animi doloremque neque in ipsam velit laudantium reiciendis cupiditate sit!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur nostrum officia a, rem aut ipsum delectus atque odio, vero sed explicabo impedit eius incidunt quibusdam, voluptatibus dolor saepe quos expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, velit labore. Fugiat ab neque explicabo soluta? Repellendus, quasi. Soluta iusto possimus facere cum harum illo ipsum fugiat inventore, libero a.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aut, quae tempore, consequatur vel quia dignissimos est dolores, nisi sint animi doloremque neque in ipsam velit laudantium reiciendis cupiditate sit!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur nostrum officia a, rem aut ipsum delectus atque odio, vero sed explicabo impedit eius incidunt quibusdam, voluptatibus dolor saepe quos expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, velit labore. Fugiat ab neque explicabo soluta? Repellendus, quasi. Soluta iusto possimus facere cum harum illo ipsum fugiat inventore, libero a.
+        </p>
+    </div>
+</body>
+</html>
